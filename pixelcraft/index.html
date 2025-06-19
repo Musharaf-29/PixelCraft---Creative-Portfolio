@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelCraft - Creative Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-bs-theme="light">
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <img src="assets/loader/loader.png" alt="Loading..." aria-hidden="true">
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="btn btn-primary" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="assets/images/logo.jpg" alt="PixelCraft Logo" height="30" class="d-inline-block align-top"> PixelCraft
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="btn btn-outline-secondary ms-3" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video Background -->
+    <section id="home" class="hero d-flex align-items-center text-center">
+        <video autoplay muted loop id="hero-video">
+            <source src="assets/videos/hero-bg.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+            <h1 class="display-3 animate-on-scroll" data-aos="fade-down">Welcome to PixelCraft</h1>
+            <p class="lead animate-on-scroll" data-aos="fade-down" data-aos-delay="200">Crafting Digital Experiences That Inspire</p>
+            <div class="hero-btns" data-aos="fade-up" data-aos-delay="400">
+                <a href="#portfolio" class="btn btn-primary btn-lg mt-3 me-2">View Portfolio</a>
+                <a href="#contact" class="btn btn-outline-light btn-lg mt-3">Hire Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center" data-aos="fade-right">
+                    <img src="assets/images/profile.jpg" alt="Profile picture" class="rounded-circle img-fluid profile-img">
+                    <div class="social-links mt-3">
+                        <a href="#" class="text-decoration-none mx-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-decoration-none mx-2"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-decoration-none mx-2"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-decoration-none mx-2"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-8" data-aos="fade-left">
+                    <h3>Hi, I'm Alex</h3>
+                    <p>I'm a passionate designer and developer with 5+ years of experience creating stunning, user-friendly digital experiences. With expertise in web design, UI/UX, and front-end development, I bring ideas to life with creativity and precision.</p>
+
+                    <div class="skills mt-4">
+                        <h4>My Skills</h4>
+                        <div class="skill-item">
+                            <span>HTML/CSS</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>UI/UX Design</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">My Services</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Custom, responsive websites built with modern technologies for optimal performance.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>Beautiful, intuitive interfaces designed with user experience as the top priority.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile Design</h3>
+                        <p>Mobile-first designs that look great on any device and screen size.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">My Portfolio</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-item">
+                        <img src="assets/images/project1.jpg" alt="Project 1" class="img-fluid">
+                        <div class="overlay">
+                            <h3>E-Commerce Website</h3>
+                            <p>Modern web application design with seamless checkout.</p>
+                            <a href="#" class="btn btn-sm btn-light">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-item">
+                        <img src="assets/images/project2.jpg" alt="Project 2" class="img-fluid">
+                        <div class="overlay">
+                            <h3>Startup Branding</h3>
+                            <p>Complete branding package for a tech startup.</p>
+                            <a href="#" class="btn btn-sm btn-light">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-item">
+                        <img src="assets/images/project3.jpg" alt="Project 3" class="img-fluid">
+                        <div class="overlay">
+                            <h3>Mobile App UI</h3>
+                            <p>Interactive UI/UX prototype for a fitness app.</p>
+                            <a href="#" class="btn btn-sm btn-light">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional portfolio items -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-item">
+                        <img src="assets/images/project4.jpg" alt="Project 4" class="img-fluid">
+                        <div class="overlay">
+                            <h3>Dashboard Design</h3>
+                            <p>Analytics dashboard with real-time data visualization.</p>
+                            <a href="#" class="btn btn-sm btn-light">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-item">
+                        <img src="assets/images/project5.jpg" alt="Project 5" class="img-fluid">
+                        <div class="overlay">
+                            <h3>Restaurant Website</h3>
+                            <p>Responsive website with online ordering system.</p>
+                            <a href="#" class="btn btn-sm btn-light">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-item">
+                        <img src="assets/images/project6.jpg" alt="Project 6" class="img-fluid">
+                        <div class="overlay">
+                            <h3>Portfolio Design</h3>
+                            <p>Minimalist portfolio for a photographer.</p>
+                            <a href="#" class="btn btn-sm btn-light">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Client Testimonials</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonial-item text-center">
+                                    <img src="assets/images/client1.jpg" class="rounded-circle mb-3" width="80" alt="Client 1">
+                                    <p class="mb-3">"PixelCraft transformed our online presence with a stunning website that perfectly represents our brand."</p>
+                                    <h5>Sarah Johnson</h5>
+                                    <p class="text-muted">CEO, TechStart Inc.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-item text-center">
+                                    <img src="assets/images/client2.jpg" class="rounded-circle mb-3" width="80" alt="Client 2">
+                                    <p class="mb-3">"The attention to detail and user experience in our app design was exceptional. Highly recommended!"</p>
+                                    <h5>Michael Chen</h5>
+                                    <p class="text-muted">Product Manager, AppVenture</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-item text-center">
+                                    <img src="assets/images/client3.jpeg" class="rounded-circle mb-3" width="80" alt="Client 3">
+                                    <p class="mb-3">"Working with PixelCraft was a pleasure. They delivered beyond our expectations on time and budget."</p>
+                                    <h5>Emily Rodriguez</h5>
+                                    <p class="text-muted">Marketing Director, BrandWorks</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Get In Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8" data-aos="fade-up">
+                    <form id="contact-form" novalidate>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required aria-describedby="nameError">
+                                <div id="nameError" class="invalid-feedback">Please enter your name.</div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required aria-describedby="emailError">
+                                <div id="emailError" class="invalid-feedback">Please enter a valid email.</div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" required aria-describedby="subjectError">
+                            <div id="subjectError" class="invalid-feedback">Please enter a subject.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required aria-describedby="messageError"></textarea>
+                            <div id="messageError" class="invalid-feedback">Please enter a message.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div id="form-success" class="alert alert-success mt-3 d-none">
+                        Your message has been sent successfully!
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4 text-center" data-aos="fade-up">
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location</h4>
+                        <p>123 Design Street, Creative City</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>contact@pixelcraft.com</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-info">
+                        <i class="fas fa-phone"></i>
+                        <h4>Phone</h4>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2025 PixelCraft. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-decoration-none mx-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-decoration-none mx-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-decoration-none mx-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-decoration-none mx-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-decoration-none mx-2"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
